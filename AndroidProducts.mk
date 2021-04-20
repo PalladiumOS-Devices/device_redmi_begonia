@@ -15,4 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/potato_begonia.mk
+    $(LOCAL_DIR)/palladium_begonia.mk
+
+COMMON_LUNCH_CHOICES := \
+    palladium_begonia-user \
+    palladium_begonia-userdebug \
+    palladium_begonia-eng

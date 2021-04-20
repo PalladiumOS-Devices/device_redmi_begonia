@@ -27,11 +27,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, device/redmi/begonia/device.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/potato/config/common_full_phone.mk)
+$(call inherit-product, vendor/palladium/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
-PRODUCT_NAME := potato_begonia
+PRODUCT_NAME := palladium_begonia
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 8 Pro
 PRODUCT_MANUFACTURER := Xiaomi
@@ -44,3 +44,21 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="begonia"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Inherit some common Palladium stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+PALLADIUM_BUILDTYPE := OFFICIAL
+
+#GAPPS
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+
+#PALLADIUM-PROPS
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.palladiumdevice.maintainer=ITACHI \
+    ro.palladiumdevice.cpu=HELIOG90T \
+    ro.palladiumdevice.display=6.53 \
+    ro.palladiumdevice.displaytype=FULLHD+ \
+    ro.palladiumdevice.battery=4500mAh \
+    ro.palladiumdevice.camera=64MP+8MP+2MP+2MP
+
