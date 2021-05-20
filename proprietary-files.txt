@@ -724,7 +724,6 @@ vendor/lib/libmfido.so
 vendor/lib/vendor.xiaomi.hardware.mfidoca@1.0.so
 vendor/lib64/libmfido.so
 vendor/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so
->>>>>>> e3e02a0... begonia: proprietary-files: Add EngineerMode and its deps
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
